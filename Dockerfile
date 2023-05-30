@@ -1,4 +1,5 @@
 FROM python:3
+RUN sudo apt update && sudo apt upgrade
 RUN pip install django
 COPY . . 
 # RUN python manage.py makemigrations
